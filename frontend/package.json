@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "react-router-dom": "^7.6.3"
+  },
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "A simple task manager application built with vanilla HTML, CSS, and JavaScript.",
+  "main": "script.js",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "nodemon": "^3.1.10",
+    "vite": "^7.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

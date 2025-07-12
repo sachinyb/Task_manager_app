@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">
+                    <i class="fas fa-tasks"></i>
+                    Task Manager
+                </h1>
+                <button id="logout-btn" class="logout-btn" style="display: none;">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Login Form -->
+            <div id="login-section" class="login-section">
+                <div class="login-card">
+                    <div class="login-header">
+                        <i class="fas fa-user-circle"></i>
+                        <h2>Welcome Back</h2>
+                        <p>Sign in to manage your tasks</p>
+                    </div>
+                    
+                    <div id="login-error" class="error-message" style="display: none;"></div>
+                    
+                    <form id="login-form" class="login-form">
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-user input-icon"></i>
+                                <input 
+                                    type="text" 
+                                    id="username" 
+                                    name="username" 
+                                    placeholder="Username"
+                                    required
+                                >
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    placeholder="Password"
+                                    required
+                                >
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="login-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Sign In
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Tasks Section -->
+            <div id="tasks-section" class="tasks-section" style="display: none;">
+                <div class="tasks-container">
+                    <div class="tasks-header">
+                        <h2>My Tasks</h2>
+                        <div class="task-stats">
+                            <span id="task-count">0</span> tasks
+                        </div>
+                    </div>
+                    
+                    <div id="tasks-error" class="error-message" style="display: none;"></div>
+                    
+                    <!-- Add Task Form -->
+                    <form id="add-task-form" class="add-task-form">
+                        <div class="input-wrapper">
+                            <i class="fas fa-plus input-icon"></i>
+                            <input 
+                                type="text" 
+                                id="new-task" 
+                                placeholder="Add a new task..." 
+                                required
+                            >
+                        </div>
+                        <button type="submit" class="add-btn">
+                            <i class="fas fa-plus"></i>
+                            Add
+                        </button>
+                    </form>
+
+                    <!-- Tasks List -->
+                    <div id="tasks-list" class="tasks-list">
+                        <div class="loading-message">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            Loading tasks...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
