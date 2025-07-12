@@ -3,6 +3,7 @@ const router = express.Router();
 const Task = require('../models/Task');
 const auth = require('../middleware/auth'); // middleware to check token
 
+
 // POST /tasks - create a new task
 router.post('/', auth, async (req, res) => {
   try {

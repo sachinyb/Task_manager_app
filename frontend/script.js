@@ -114,7 +114,7 @@ async function loadTasks() {
     try {
         const response = await fetch('http://localhost:5000/tasks', {
             headers: {
-                'Authorization': `Bearer ${token}`
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODcyNThiYWZmMDhlYzA3ODM4NDE2NzciLCJpYXQiOjE3NTIzMjQzMDQsImV4cCI6MTc1MjMyNzkwNH0.sZmbeN5j70zrWob2TucvaKmnilY-Imn8TQaF28MAyZ4`
             }
         });
         
