@@ -6,6 +6,7 @@ import './Auth.css';
 const Login = () => {
   const [formData, setFormData] = useState({
     username: '',
+    email:'',
     password: ''
   });
   const [error, setError] = useState('');
@@ -62,6 +63,17 @@ const Login = () => {
               id="username"
               name="username"
               value={formData.username}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
               onChange={handleChange}
               required
             />

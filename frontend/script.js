@@ -114,7 +114,7 @@ async function loadTasks() {
     try {
         const response = await fetch('http://localhost:5000/tasks', {
             headers: {
-                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODcyNThiYWZmMDhlYzA3ODM4NDE2NzciLCJpYXQiOjE3NTIzMjQzMDQsImV4cCI6MTc1MjMyNzkwNH0.sZmbeN5j70zrWob2TucvaKmnilY-Imn8TQaF28MAyZ4`
+                'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODc2ODZjZGJjZjUzMzJjZjc2ZWU4MWMiLCJpYXQiOjE3NTI1OTgyNDEsImV4cCI6MTc1MjYwMTg0MX0.xoMbA9JyOtJ_VrS-PBd21xWiH3JjVZpWaBg8B0AMtrk`
             }
         });
         
